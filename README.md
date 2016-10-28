@@ -4,7 +4,7 @@
 - Clone it locally from your forked repository, which will look like ```git clone https://github.com/<your github name>/java-cbus-reading-the-bard``` (you can copy this url from your browser after navigating to your repository)
 - Usinig Git Bash or the Command Prompt (on a Windows machine) or a terminal (Linux/Mac):
 	- navigate into the folder where you cloned the repository (its default name will be *java-cbus-reading-the-bard*)
-	- run the command ```gradlew eclipse``` -- this will generate eclipse project files
+	- run the following command,, which will generate eclipse project files: ```gradlew eclipse```
 - Launch Eclipse
 	- From the *File* menu, choose *Import...*
 		- expand *General*, then select *Existing Projects into Workspace* and hit the *Next* button
