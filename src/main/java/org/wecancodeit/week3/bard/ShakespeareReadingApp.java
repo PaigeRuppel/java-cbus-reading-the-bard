@@ -17,8 +17,9 @@ public class ShakespeareReadingApp {
 	 */
 	public static void main(String[] args) {
 		readAndWriteToSystemOut();
-		writeFileReplacingPunctuationWithLinebreaks();
+		writeFileStrippingPunctuation();
 		tryToReadAFileThatDoesntExist();
+		writeFileReplacingPunctuationWithLinebreaks();
 	}
 
 	/**
@@ -45,9 +46,61 @@ public class ShakespeareReadingApp {
 	 * </p>
 	 * 
 	 * <p>
-	 * TODO create and use an instance of {@link PunctuationStripper} to replace
-	 * punctuation with newlines and remove other newlines, trimming space at
-	 * the beginning and ends of lines
+	 * TODO create and use an instance of {@link PunctuationStripper} to strip punctuation
+	 * </p>
+	 * 
+	 * <p>
+	 * TODO Close the {@link BufferedReader} you use in a finally block
+	 * </p>
+	 * 
+	 * <p>
+	 * Example:
+	 * </p>
+	 * 
+	 * <pre>
+	 * Now get you to my lady's chamber, and tell her, let her paint an
+	 * inch thick, to this favour she must come; make her laugh at that.
+	 * </pre>
+	 * 
+	 * <p>
+	 * would become:
+	 * </p>
+	 * 
+	 * <pre>
+	 * Now get you to my ladys chamber and tell her let her paint an
+	 * inch thick to this favour she must come make her laugh at that
+	 * </pre>
+	 */
+	private static void writeFileStrippingPunctuation() {
+	}
+
+	/**
+	 * <p>TODO try to read a file that doesn't exist, catch the exception that is
+	 * thrown, then write an error to {@link System#err} (same syntax as writing
+	 * to {@link System#out})</p>
+	 * 
+	 * <p>
+	 * TODO Close the {@link BufferedReader} you use in a finally block
+	 * </p>
+	 */
+	private static void tryToReadAFileThatDoesntExist() {
+	}
+
+	/**
+	 * 
+	 * Extension!
+	 * 
+	 * <p>
+	 * TODO Create a test and a class (this is an exception to not creating new classes).
+	 * </p>
+	 * 
+	 * <p>
+	 * TODO read the input file and write a new file
+	 * </p>
+	 * 
+	 * <p>
+	 * TODO create and use an instance of {@link PunctionationReplacer} to replace
+	 * punctuation with newlines and write these to System.out
 	 * </p>
 	 * 
 	 * <p>
@@ -78,17 +131,4 @@ public class ShakespeareReadingApp {
 	 */
 	private static void writeFileReplacingPunctuationWithLinebreaks() {
 	}
-
-	/**
-	 * <p>TODO try to read a file that doesn't exist, catch the exception that is
-	 * thrown, then write an error to {@link System#err} (same syntax as writing
-	 * to {@link System#out})</p>
-	 * 
-	 * <p>
-	 * TODO Close the {@link BufferedReader} you use in a finally block
-	 * </p>
-	 */
-	private static void tryToReadAFileThatDoesntExist() {
-	}
-
 }
