@@ -6,6 +6,8 @@ public class PunctuationStripper {
 	 * TODO use this method to satisfy the tests
 	 */
 	public String strip(String stripFrom) {
-		return null;
+		String stripped = stripFrom.trim();
+		stripped = stripped.replaceAll("[^a-zA-Z ]", "");
+		return stripped;
 	}
 }

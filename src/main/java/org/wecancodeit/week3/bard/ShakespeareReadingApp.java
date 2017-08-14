@@ -1,6 +1,7 @@
 package org.wecancodeit.week3.bard;
 
 import java.io.BufferedReader;
+import java.io.FileReader;
 
 public class ShakespeareReadingApp {
 
@@ -10,11 +11,14 @@ public class ShakespeareReadingApp {
 	 * TODO Replace this with the location of the Yorick.txt file in the
 	 * src/main/resources folder of your local computer.
 	 */
-	public static String SHAKESPEARE_FILEPATH = "c:\\pathOnYourMacine\\src\\main\\resources\\Yorick.txt";
+	public static String SHAKESPEARE_FILEPATH = "C:\\Users\\Paige\\code\\java-cbus-reading-the-bard\\src\\main\\Yorick.txt";
 
 	/**
 	 * TODO load the file at SHAKESPEARE_FILEPATH via a {@link BufferedReader}
 	 */
+	
+	BufferedReader fileReader = new BufferedReader(new FileReader(SHAKESPEARE_FILEPATH));
+	
 	public static void main(String[] args) {
 		readAndWriteToSystemOut();
 		writeFileStrippingPunctuation();
